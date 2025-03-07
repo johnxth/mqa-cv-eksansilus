@@ -33,7 +33,6 @@
             margin-bottom: 10px;
         }
 // Print Style
-        }
         @media print {
             body, html {
                 margin: 0;
