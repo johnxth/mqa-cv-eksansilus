@@ -11,7 +11,7 @@
 </head>
 <body class="bg-light">
     <div class="container py-5 px-2">
-        <button class="btn btn-primary mb-3" onclick="window.print()">Print This CV</button>
+        <marquee class="text-primary fw-bold mb-3">Selamat datang di CV Saya! Silakan lihat pengalaman dan keterampilan saya di bawah ini.</marquee>
         <div class="card shadow-lg p-4">
             <div w3-include-html="personaldata.html"></div>
             <div w3-include-html="contacts.html"></div>
@@ -27,6 +27,9 @@
             <div w3-include-html="certifications.html"></div>
             <hr>
             <div w3-include-html="skills.html"></div>
+        </div>
+                <div class="text-center mt-3">
+            <button class="btn btn-primary print-btn" onclick="window.print()">Print This CV</button>
         </div>
     </div>
 <script>
