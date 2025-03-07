@@ -33,6 +33,11 @@
             margin-bottom: 10px;
         }
 // Print Style
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 50px;
+        }
         @media print {
             body, html {
                 margin: 0;
