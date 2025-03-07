@@ -61,4 +61,7 @@
                 padding: 0 !important;
                 box-shadow: none;
             }
+            .print-btn {
+                display: none;
+            }
         }
