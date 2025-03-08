@@ -22,26 +22,21 @@
                 </div>
               </div>
 <!-- ----------------------------------------------- -->
-<h3 class="text-center">KEY COMPETENCIES</h3>
-            <div class="row" id="listbox-container"></div>
-<script>
+ <style>
+        .list-group-item {
+            cursor: pointer;
+            border: none; /* Menghilangkan border */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Responsive Listbox</h2>
+        <div class="row" id="listbox-container"></div>
+    </div>
+
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
-            /*
-            const items = [
-            "Attention to Detail",
-            "Manual and Automation Testing & QA",
-            "Functional Testing & UAT",
-            "Test Planning & Excecution",
-            "Test Case Design", 
-            "Regression Testing",
-            "Performance Testing",
-            "Database Testing & API Testing",
-            "Basic Network Infrastructure",
-            "Team Colaboration", 
-            "Agile Methodologies",
-            "Bug Reporting & Documentation"
-            ];
-            */
             const items = [
                 "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", 
                 "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", 
