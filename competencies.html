@@ -22,34 +22,45 @@
                 </div>
               </div>
 <!-- ----------------------------------------------- -->
-import { useState } from "react";
+<h3 class="text-center">KEY COMPETENCIES</h3>
+            <div class="row" id="listbox-container"></div>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = [
+            "Item 1",
+            "Item 2",
+            "Item 3",
+            "Item 4",
+            "Item 5", 
+            "Item 6",
+            "Item 7",
+            "Item 8",
+            "Item 9",
+            "Item 10", 
+            "Item 11",
+            "Item 12"
+            ];
+            
+            const container = document.getElementById("listbox-container");
+            const columns = 3; 
+            const itemsPerColumn = Math.ceil(items.length / columns);
+            
+            for (let i = 0; i < columns; i++) {
+                let col = document.createElement("div");
+                col.className = "col-md-4 col-sm-6 mb-3";
+                let listGroup = document.createElement("div");
+                listGroup.className = "list-group";
+                
+                items.slice(i * itemsPerColumn, (i + 1) * itemsPerColumn).forEach(item => {
+                    let listItem = document.createElement("button");
+                    listItem.className = "list-group-item list-group-item-action";
+                    listItem.textContent = item;
+                    listGroup.appendChild(listItem);
+                });
+                
+                col.appendChild(listGroup);
+                container.appendChild(col);
+            }
+        });
+    </script>
 
-export default function ResponsiveListbox() {
-  const [items, setItems] = useState([
-            "Attention to Detail",
-            "Manual and Automation Testing & QA",
-            "Functional Testing & UAT",
-            "Test Planning & Excecution",
-            "Test Case Design",
-            "Regression Testing",
-            "Performance Testing",
-            "Database Testing & API Testing",
-            "Basic Network Infrastructure",
-            "Team Colaboration",
-            "Agile Methodologies",
-            "Bug Reporting & Documentation"
-  ]);
-
-  return (
-    <div className="max-w-3xl mx-auto p-4">
-      <h3 class="text-center">KEY COMPETENCIES</h3>
-      <div className="columns-1 sm:columns-2 md:columns-3 space-y-4">
-        {items.map((item, index) => (
-          <div key={index} className="p-2 bg-blue-100 rounded-lg shadow break-inside-avoid">
-            {item}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
