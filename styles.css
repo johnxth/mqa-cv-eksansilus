@@ -32,6 +32,11 @@
             color: #0073b1;
             margin-bottom: 10px;
         }
+// Listbox style
+        .list-group-item {
+            cursor: pointer;
+            border: none; /* Menghilangkan border */
+        }
 // Print Style
         .container {
             margin-top: 50px;
