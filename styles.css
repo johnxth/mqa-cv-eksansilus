@@ -33,16 +33,16 @@
             margin-bottom: 10px;
         }
 // Listbox style
-        .competenceies-list {
+        .competencies-list {
             column-count: 1;
         }
         @media (min-width: 768px) {
-            .competenceies-list {
+            .competencies-list {
                 column-count: 2;
             }
         }
         @media (min-width: 1024px) {
-            .competenceies-list {
+            .competencies-list {
                 column-count: 3;
             }
         }
