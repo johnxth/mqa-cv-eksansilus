@@ -33,9 +33,18 @@
             margin-bottom: 10px;
         }
 // Listbox style
-        .list-group-item {
-            cursor: pointer;
-            border: none; /* Menghilangkan border */
+        .competenceies-list {
+            column-count: 1;
+        }
+        @media (min-width: 768px) {
+            .competenceies-list {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .competenceies-list {
+                column-count: 3;
+            }
         }
 // Print Style
         .container {
