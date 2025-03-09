@@ -53,6 +53,10 @@
             padding: 50px;
         }
         @media print {
+            @page {
+                size: 210mm 330mm; /* F4 size */
+                margin: 0;
+            }
             body, html {
                 margin: 0;
                 padding: 0;
