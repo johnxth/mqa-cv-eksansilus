@@ -54,7 +54,8 @@
         }
         @media print {
             @page {
-                size: 210mm 330mm; /* F4 size */
+                size: A4;
+                /* size: 210mm 330mm;*/ /* F4 size */
                 /* size: letter; */
                 /*  margin: 0; */
             }
